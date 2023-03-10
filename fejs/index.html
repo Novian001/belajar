@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Storage Bookshelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 align="center">Bookshelf</h1>
+    <div class="contents" align="center">
+
+        <div class="child-content" id="user-form">
+            <h2>Masukkan Buku Baru</h2>
+            <hr>
+            <form id="form-data">
+                <div class="form-element">
+                    <label for="judul">Judul</label><br>
+                    <input id="judul" type="text" name="judul" placeholder="Judul" value="" maxlength="255"
+                        required><br>
+                </div>
+                <div class="form-element">
+                    <label for="penulis">Penulis</label><br>
+                    <input id="penulis" type="text" name="penulis" placeholder="Penulis" value="" maxlength="255"
+                        required><br>
+                </div>
+                <div class="form-element">
+                    <label for="tahun">Tahun</label><br>
+                    <input id="tahun" type="number" name="tahun" placeholder="Tahun" value="" maxlength="4"
+                        required><br>
+                </div>
+                <div class="form-element">
+                    <label for="readComplete"> Saya sudah baca!!!</label>
+                    <input type="checkbox" id="readComplete" name="readComplete" value="read">
+                </div>
+                <div class="form-element">
+                    <input id="submitButton" type="submit" value="Submit Data">
+                </div>
+            </form>
+        </div>
+        <div class="child-content" id="book-edit">
+            <h2>Edit Buku</h2>
+            <form id="form-edit">
+                <div class="form-element">
+                    <label for="edit-judul">Judul</label>
+                    <input type="text" id="edit-judul" name="judul" required>
+                </div>
+                <div class="form-element">
+                    <label for="edit-penulis">Penulis</label>
+                    <input type="text" id="edit-penulis" name="penulis" required>
+                </div>
+                <div class="form-element">
+                    <label for="edit-tahun">Tahun</label>
+                    <input type="number" id="edit-tahun" name="tahun" required>
+                </div>
+                <div class="form-element">
+                    <label for="edit-readComplete">Sudah dibaca</label>
+                    <input type="checkbox" id="edit-readComplete" name="readComplete">
+                </div>
+                <input class="form-element" type="submit" value="Simpan">
+                <button id="cancel-edit">Batal</button>
+            </form>
+        </div>
+
+        <div class="child-content">
+            <h2>Belum selesai dibaca</h2>
+            <table id="book-list-unread">
+                <thead>
+                    <tr>
+                        <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>Tahun</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="child-content">
+            <h2>Selesai dibaca</h2>
+            <table id="book-list-read">
+                <thead>
+                    <tr>
+                        <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>Tahun</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="scriptt.js"></script>
+</body>
+
+</html>

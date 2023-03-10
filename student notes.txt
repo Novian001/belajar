@@ -1,0 +1,11 @@
+color :
+1C3144 text
+D00000 text-secondary
+
+FFBA08 ternary
+
+A2AEBB primary
+3F88C5 secondary
+
+js :
+features hamburger menu dan slideer
